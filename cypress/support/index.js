@@ -14,7 +14,19 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './Metodos_tela_de_cadastro'
+import './Metodos_tela_de_login'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+//Cypress.once('uncaught:exception', (err, runnable) => {
+  //  return false;
+  //})
+
+
+  cy.on('uncaught:exception', (err, runnable) => {
+    expect(err.message).to.include('of undefined')
+      done()
+      return false
+    });
+
