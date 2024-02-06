@@ -1,0 +1,55 @@
+BDD's 
+Tela de Login Stone
+
+Case 1
+Validar acesso a tela principal de login Validar acesso a tela principal de login
+Dado estou na página inicial
+Quando clico no link "Login"
+Entao a tela de principal de login é carregada.
+
+Case 2
+Validar mensagem ao informar email invalido na tela de login
+Dado que acesso a tela de login 
+Quando informo "email invalido", no cadastro, 
+Entao a seguinte mensagem é apresentada "Confira se os dados estão certos. Se não conseguir entrar, use o e-mail no lugar do CPF."
+
+
+Case 3
+Validar mensagem ao informar email não cadastrado na tela de login
+Dado que acesso a tela de login 
+Quando informo "email não cadastrado", no cadastro, 
+Entao a seguinte mensagem é apresentada "Confira se os dados estão certos. Se não conseguir entrar, use o e-mail no lugar do CPF."
+
+
+Case 4
+Validar acesso a tela "esqueci minha senha
+Dado que acesso a tela de login 
+Quando clico no link, "Esqueci minha senha" 
+Entao a tela "Como podemos te ajudar?" é carregada com sucesso."
+
+Case 5
+Validar mensagem ao clicar em "Receber email" sem informar um email no "Esqueci ou quero trocar de senha
+Dado que acesso estou na tela "Resetar Senha"
+Quando não informo um "email valido" e clico no link, ""Receber email".
+Entao a seguinte mensagem é apresentada "E-mail é obrigatório".
+
+
+Case 6
+Validar mensagem de retorno ao informar um email válido no "Esqueci ou quero trocar de senha
+Dado que acesso estou na tela "Resetar Senha"
+Quando não informo um "email valido" e clico no link, ""Receber email".
+Entao a seguinte mensagem é apresentada "Enviamos um e-mail pra você trocar a senha".
+
+
+Case 7
+Validar mensagem de retorno, ao informar um email em formato inválido no "Esqueci ou quero trocar de senha
+Dado que acesso estou na tela "Resetar Senha"
+Quando não informo um "email em formato valido" e clico no link, ""Receber email".
+Entao a seguinte mensagem é apresentada "Corrija o e-mail.".
+
+
+Case 8
+Validar acesso ao link "Esqueci ou perdi acesso ao meu e-mail cadastrado na Stone" do Esqueci minha senha
+Quando clico no link, "Esqueci minha senha" 
+Quando clico no link, "Esqueci ou perdi acesso ao meu e-mail cadastrado na Stone"
+Entao a tela coninstruções para alteração de email é carregada com sucesso.

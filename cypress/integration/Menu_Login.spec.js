@@ -18,7 +18,7 @@ describe('Login', function() {
 
    it('Validar mensagem ao informar email invalido na tela de login', function() {
     cy.Validar_mensagem_ao_informar_email_invalido_na_tela_de_login()
-    cy.get('.jade-alert__content > .jade-text1').should('be.visible')
+    cy.get('.jade-alert__content > .jade-text').should('be.visible')
 
    }) 
 
